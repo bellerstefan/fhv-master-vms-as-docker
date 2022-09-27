@@ -1,0 +1,11 @@
+# 2022 Stefan Beller
+version: '3.8'
+services:
+  hadoop:
+    image: hadoop_ubuntu:latest
+    volumes:
+      - ./volume_hadoop:/volume_hadoop
+    ports:
+      - 9870:9870
+      - 9864:9864
+      - 8088:8088
